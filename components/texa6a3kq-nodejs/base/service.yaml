@@ -1,0 +1,14 @@
+apiVersion: v1
+kind: Service
+metadata: 
+  labels: 
+    app.kubernetes.io/instance: texa6a3kq-nodejs
+    app.kubernetes.io/managed-by: kustomize
+    app.kubernetes.io/name: texa6a3kq-nodejs 
+  name: texa6a3kq-nodejs
+spec:
+  ports:
+  - port: 3001 
+    targetPort: 3001 
+  selector:
+    app.kubernetes.io/instance: texa6a3kq-nodejs 
